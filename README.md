@@ -31,3 +31,15 @@ The only required modification:
 
 ```bash
 ulimit -s unlimited
+
+---
+
+For detailed instructions on program usage, please refer to:
+
+- Official manual:  
+  https://github.com/HongjianFang/DSurfTomo/blob/stable/doc/ManualDSurfTomoV1.4.pdf  
+
+- Methodological description:  
+  Fang et al. (2015, *Geophysical Journal International*)
+
+Fang, H., Yao, H., Zhang, H., Huang, Y. C., & van der Hilst, R. D. (2015). Direct inversion of surface wave dispersion for three-dimensional shallow crustal structure based on ray tracing: methodology and application. Geophysical Journal International, 201(3), 1251-1263.
