@@ -9,9 +9,9 @@
 
 This version introduces several practical updates focused on scalability and computational performance:
 
-- Parallel processing is implemented during the Fast Marching Method (FMM) travel-time calculation.
-- Integer overflow issues are resolved, enabling large-scale data processing.
-- Output of model *roughness* is added.
+- 1. Parallel processing is implemented during the Fast Marching Method (FMM) travel-time calculation.
+- 2. Integer overflow issues are resolved, enabling large-scale data processing.
+- 3. Output of model *roughness* is added.
 
 ---
 
