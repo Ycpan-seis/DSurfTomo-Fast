@@ -31,6 +31,7 @@ The only required modification:
 
 ```bash
 ulimit -s unlimited
+```
 
 ---
 
