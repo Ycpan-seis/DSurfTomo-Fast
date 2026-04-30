@@ -1,6 +1,6 @@
-# DsurfTomo-Fast
+# DSurfTomo-Fast
 
-**DsurfTomo-Fast** is an updated version of DSurfTomo  
+**DSurfTomo-Fast** is an updated version of DSurfTomo  
 (originally developed by Hongjian Fang: https://github.com/HongjianFang/DSurfTomo)
 
 ---
