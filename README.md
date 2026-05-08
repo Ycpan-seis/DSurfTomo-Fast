@@ -3,8 +3,6 @@
 **DSurfTomo-Fast** is an updated version of DSurfTomo  
 (originally developed by Hongjian Fang: https://github.com/HongjianFang/DSurfTomo)
 
-Contact: Yichen Pan, pyc2020@mail.ustc.edu.cn, ycpan03@gmail.com
-
 ---
 
 ## Overview
