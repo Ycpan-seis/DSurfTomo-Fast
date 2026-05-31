@@ -989,7 +989,7 @@ subroutine CalSurfG(nx,ny,nz,nparpi,vels,iw,rw,col,dsurf, &
   real vels(nx,ny,nz)
   real rw(*)
   integer col(*)
-  integer*8 iw(*) ! Yichen
+  integer iw(*) ! Yichen
   real dsurf(*)
   real goxdf,gozdf,dvxdf,dvzdf
   integer kmaxRc,kmaxRg,kmaxLc,kmaxLg
@@ -1405,7 +1405,7 @@ subroutine CalSurfG(nx,ny,nz,nparpi,vels,iw,rw,col,dsurf, &
           if(abs(row(nn)).gt.ftol) then ! the element is not zero
             nar=nar+1 !0 before circle
             rw(nar)=real(row(nn))
-            iw(nar+1)= count11
+            iw(nar)= count11
             col(nar)=nn
           endif
         enddo

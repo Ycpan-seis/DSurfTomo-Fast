@@ -17,7 +17,7 @@ subroutine aprod(mode, m, n, x, y, leniw, lenrw, iw, rw)
   real	x(n), y(m)	! Input vectors
 	integer(8) :: leniw
 	integer(8) lenrw ! Yichen
-  integer(8)	iw(leniw)	! Integer work vector containing:
+  integer	iw(leniw)	! Integer work vector containing:
   ! iw[1]  Number of non-zero elements in a
   ! iw[2:iw[1]+1]  Row indices of non-zero elements
   ! iw[iw[1]+2:2*iw[1]+1]  Column indices
@@ -31,9 +31,9 @@ subroutine aprod(mode, m, n, x, y, leniw, lenrw, iw, rw)
 
   !c	set the ranges the indices in vector iw
 
-  kk=iw(1)
-  i1=1
-  j1=kk+1
+  kk=lenrw
+  i1=0
+  j1=kk
 
   !c	main iteration loop
 

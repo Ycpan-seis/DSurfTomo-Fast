@@ -71,7 +71,7 @@ program SurfTomo
   integer,dimension(:,:),allocatable::periods
   real,dimension(:),allocatable::rw
   integer,dimension(:),allocatable::col
-  integer*8,dimension(:),allocatable::iw ! Yichen
+  integer,dimension(:),allocatable::iw ! Yichen
   real,dimension(:),allocatable::dv,norm
   real,dimension(:,:,:),allocatable::vsf
   real,dimension(:,:,:),allocatable::vsftrue
@@ -447,7 +447,7 @@ program SurfTomo
     !enddo
 
     do i = 1,nar
-      rw(i) = rw(i)*datweight(iw(1+i))
+      rw(i) = rw(i)*datweight(iw(i))
     enddo
 
     norm=0
@@ -499,31 +499,31 @@ program SurfTomo
             count3=count3+1
             col(nar+1)=(k-1)*nvz*nvx+(j-1)*nvx+i
             rw(nar+1)=2.0*weight
-            iw(1+nar+1)=dall+count3
+            iw(nar+1)=dall+count3
             cbst(dall+count3)=0
             nar=nar+1
           else
             count3=count3+1
             col(nar+1)=(k-1)*nvz*nvx+(j-1)*nvx+i
             rw(nar+1)=6.0*weight
-            iw(1+nar+1)=dall+count3
+            iw(nar+1)=dall+count3
             rw(nar+2)=-1.0*weight
-            iw(1+nar+2)=dall+count3
+            iw(nar+2)=dall+count3
             col(nar+2)=(k-1)*nvz*nvx+(j-1)*nvx+i-1
             rw(nar+3)=-1.0*weight
-            iw(1+nar+3)=dall+count3
+            iw(nar+3)=dall+count3
             col(nar+3)=(k-1)*nvz*nvx+(j-1)*nvx+i+1
             rw(nar+4)=-1.0*weight
-            iw(1+nar+4)=dall+count3
+            iw(nar+4)=dall+count3
             col(nar+4)=(k-1)*nvz*nvx+(j-2)*nvx+i
             rw(nar+5)=-1.0*weight
-            iw(1+nar+5)=dall+count3
+            iw(nar+5)=dall+count3
             col(nar+5)=(k-1)*nvz*nvx+j*nvx+i
             rw(nar+6)=-1.0*weight
-            iw(1+nar+6)=dall+count3
+            iw(nar+6)=dall+count3
             col(nar+6)=(k-2)*nvz*nvx+(j-1)*nvx+i
             rw(nar+7)=-1.0*weight
-            iw(1+nar+7)=dall+count3
+            iw(nar+7)=dall+count3
             col(nar+7)=k*nvz*nvx+(j-1)*nvx+i
             cbst(dall+count3)=0
             nar=nar+7
@@ -534,9 +534,9 @@ program SurfTomo
     m = dall + count3
     n = maxvp
 
-    iw(1)=nar
+    !iw(1)=nar
     do i=1,nar
-      iw(1+nar+i)=col(i)
+      iw(nar+i)=col(i)
     enddo
     if (nar > maxnar) stop 'increase sparsity fraction(spfra)'
 

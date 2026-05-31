@@ -1766,7 +1766,7 @@ subroutine CalSurfG_parallel(nx,ny,nz,nparpi,vels,iw,rw,col,dsurf, &
   real vels(nx,ny,nz)
   real rw(*)
   integer col(*)
-  integer*8 iw(*) ! Yichen
+  integer iw(*) ! Yichen
   real dsurf(*)
   real goxdf,gozdf,dvxdf,dvzdf
   integer kmaxRc,kmaxRg,kmaxLc,kmaxLg
@@ -2347,7 +2347,7 @@ do i2 = 1, dall
          nar = nar + 1
          !if( nar==leniwsurf )	stop '>>> Increase space for iwsurf!'
          rw(nar)  = tmp_surf(i2)%rw(k2)
-         iw(nar+1)  = tmp_surf(i2)%iw(k2)
+         iw(nar)  = tmp_surf(i2)%iw(k2)
          col(nar) = tmp_surf(i2)%col(k2)
       end do
       !jrowsurf(count1) = nar

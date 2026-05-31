@@ -39,7 +39,7 @@ contains
 
     integer(8),  intent(in) :: leniw
     integer(8),  intent(in) :: lenrw ! Yichen
-    integer(8),  intent(in) :: iw(leniw) ! Yichen
+    integer,  intent(in) :: iw(leniw) ! Yichen
     real,     intent(in) :: rw(lenrw)
 
     integer,  intent(in)  :: m, n, itnlim, localSize, nout
@@ -56,7 +56,7 @@ contains
          integer(8),  intent(in)    :: lenrw
          integer(8),  intent(in)    :: leniw ! Yichen
          real,     intent(in)    :: rw(lenrw)
-         integer(8),  intent(in)    :: iw(leniw) ! Yichen
+         integer,  intent(in)    :: iw(leniw) ! Yichen
          integer,  intent(in)    :: m,n
          real(dp), intent(inout)    :: x(n)
          real(dp), intent(inout) :: y(m)
