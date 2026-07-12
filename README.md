@@ -33,6 +33,13 @@ The only required modification:
 ulimit -s unlimited
 ```
 
+- Model setting
+<p align="center">
+  <img width="500" alt="fig0712" src="https://github.com/user-attachments/assets/b3305fb5-b824-4db6-a83a-016c56126db1" />
+</p>
+
+**Figure 1.** Schematic illustration of the model setup. The black grid represents the input model (MOD), the red grid indicates the inversion domain, and the green dot marks the starting point that should be specified in the input file (goxd, gozd).
+
 ---
 
 For detailed instructions on program usage, please refer to:
