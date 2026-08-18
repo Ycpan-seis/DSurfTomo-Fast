@@ -32,6 +32,10 @@ The only required modification:
 ```bash
 ulimit -s unlimited
 ```
+- as well as **OMP_STACKSIZE** (1G is enough in most cases)
+```
+export OMP_STACKSIZE=1G
+```
 
 - Model setting
 <p align="center">
